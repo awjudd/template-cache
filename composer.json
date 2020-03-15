@@ -1,0 +1,34 @@
+{
+    "name": "awjudd/template-cache",
+    "description": "An easy way to cache parts of your views to prevent the re-generation of them",
+    "type": "library",
+    "keywords": ["laravel", "cache", "template", "blade"],
+    "require": {
+        "illuminate/support": "^7.1",
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Judd",
+            "email": "awjudd@gmail.com",
+            "homepage": "https://andrewjudd.ca"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Awjudd\\TemplateCache": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Awjudd\\TemplateCache\\Providers\\CacheServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
